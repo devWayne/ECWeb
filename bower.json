@@ -1,0 +1,21 @@
+{
+  "name": "ECWeb",
+  "version": "1.0.0",
+  "homepage": "https://github.com/devWayne/ECWeb",
+  "authors": [
+    "Wayne <dev.wayne.ix@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "*",
+    "normalize.css": "~3.0.3"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

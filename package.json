@@ -1,0 +1,40 @@
+{
+  "name": "ecweb",
+  "version": "1.0.0",
+  "description": "e-commerce web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devWayne/ECWeb.git"
+  },
+  "author": "Jarvan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devWayne/ECWeb/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^3.1.0",
+    "gulp": "*",
+    "gulp-clean": "^0.2.4",
+    "gulp-ignore": "*",
+    "gulp-less": "1.x.x",
+    "gulp-pipereplace": "0.0.1",
+    "gulp-postcss": "^2.0.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ttkm": "*",
+    "fs-extra": "~0.18.2",
+    "gulp-replace": "~0.5.3",
+    "gulp-babel": "*"
+  },
+  "homepage": "https://github.com/devWayne/ECWeb#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "react": "^0.13.3"
+  }
+}
