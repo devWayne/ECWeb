@@ -1,0 +1,81 @@
+.recommend{
+        width: 240px;
+        float: left;
+        margin-left: -100%;
+
+        .words{
+            height: 200px;
+            padding: 30px 0 30px 20px;
+
+            @size: 57px;
+            @lineHeight: 1.2;
+
+            .outer{
+                margin: 0 10px 10px 0;
+                line-height: @lineHeight;
+                float: left;
+                width: @size;
+                height: @size;
+                text-align: center;
+                color: #2f2f2f;
+                background-color: #fff;
+                border-radius: @size;
+                position: relative;
+                border: 1px solid #fff;
+                display: table;
+
+                &:hover{
+                    color: #fff;
+                    background: none;
+                    border-color: rgba(0,0,0,.3);
+                    border-color: #fff\9;
+
+                    .text{
+                        text-decoration: underline;
+                    }
+                }
+
+                .inner{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+
+                .text{
+                    font-weight: normal;
+                    display: inline-block;
+                    max-width: 40px;
+                    margin: 0 auto;
+                    //.mui-ellipsis-lines(2, @lineHeight);
+                }
+
+                &.words-4{
+                    .text{
+                        max-width: 48px;
+                    }
+                }
+                &.words-gt6{
+                    .text{
+                        max-width: 46px;
+                    }
+                }
+
+                .hot{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 21px;
+                    height: 12px;
+                    line-height: 12px;
+                    background: url(//g.alicdn.com/tm/chaoshi/1.2.0/img/hot.png) no-repeat 0 0;
+                    text-indent: -999em;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .banner{
+            display: block;
+            height: 296px;
+        }
+}
+

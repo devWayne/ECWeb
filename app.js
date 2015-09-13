@@ -5,9 +5,10 @@ var express = require('express');
 
 //Server side React
 var React = require('react/addons'),
-    ItemList = require('./build/itemList/index'),
-    ReactApp = React.createFactory(ItemList);
+    Floor = require('./build/floor/index'),
+    ReactApp = React.createFactory(Floor);
 
+//express
 app = express();
 var port = 9000;
 // Include static assets. Not advised for production

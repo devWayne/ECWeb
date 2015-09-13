@@ -17,7 +17,7 @@ class Item extends React.Component {
 		<p className="title">{title}</p>                        
 		<p className="o-price"><i className="yen">¥</i>{originPrice}</p>                        
 		<p className="price"><i className="yen">¥</i><span className="j_CurPrice">{price}</span></p>                        
-		<button className="j_AddCart ui-cart chaoshi-font" data-itemid="521406293860" data-pic={imgUrl}>㑶</button>                        
+		<button className="j_AddCart ui-cart font" data-itemid="521406293860" data-pic={imgUrl}>㑶</button>                        
 		<i className="product-mask"></i>
 	</div></a>);
   }

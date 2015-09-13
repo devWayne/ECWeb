@@ -1,0 +1,54 @@
+    .promo{
+        position: relative;
+        @size: 150px;
+        width: @size;
+        float: left;
+        margin-left: -@size;
+        padding-top: 30px;
+        font-size: 0;
+
+        .title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 39px;
+            z-index: 1;
+        }
+
+        a{
+            position: relative;
+            display: block;
+
+            .ui-cart{
+                position: absolute;
+                bottom: 58px;
+                right: 15px;
+                z-index: 1;
+                font-size: 34px;
+            }
+            s{
+                position: absolute;
+                width: 22px;
+                height: 16px;
+                background: #fff;
+                bottom: 68px;
+                right: 20px;
+            }
+
+            .price{
+                color: #fcff00;
+                font-weight: bold;
+                font-size: 18px;
+                position: absolute;
+                top: 80px;
+                left: 85px;
+                width: 52px;
+                text-align: center;
+            }
+            .odd{
+                font-size: 0.5em;
+            }
+        }
+    }
+
