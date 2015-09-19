@@ -26,7 +26,7 @@ var processors = [
 
 gulp.task('less', function() {
 	
-    return gulp.src('mods/**/*.less')
+    return gulp.src('src/**/*.less')
 	.pipe(less())        
 	//.pipe(postcss(processors))
         .pipe(gulp.dest('build/'));
@@ -34,7 +34,7 @@ gulp.task('less', function() {
 
 //es6 transform
 gulp.task('babel', function() {
-  return gulp.src('mods/**/*.js')
+  return gulp.src('src/**/*.js')
     .pipe(rename(function(path) {
       path.extname = '.js';
     }))

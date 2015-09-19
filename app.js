@@ -5,8 +5,13 @@ var express = require('express');
 
 //Server side React
 var React = require('react/addons'),
-    Floor = require('./build/floor/index'),
-    ReactApp = React.createFactory(Floor);
+    Floor = require('./build/mods/floor/index'),
+    Cat = require('./build/mods/fs/cat/index'),
+    //ReactApp = React.createFactory(Floor),
+    ReactApp = React.createFactory(Cat);
+
+var data = require('./mock/data.json');
+	
 
 //express
 app = express();
@@ -22,7 +27,7 @@ app.set('view engine', 'ejs');
 app.get('/', function(req, res){
 		// React.renderToString takes your component
 	    // and generates the markup
-	var reactHtml = React.renderToString(ReactApp({}));
+	var reactHtml = React.renderToString(ReactApp({floorList:data.floorList}));
 	    // Output html rendered by react
 		// console.log(myAppHtml);
 	res.render('index.ejs', {reactOutput: reactHtml});
